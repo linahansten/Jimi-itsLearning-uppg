@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Permanent Marker', cursive;
+}
+
+body{
+    animation: bg-animation 10s infinite;
+    ;}
+
+#container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: 2rem;
+}
+#image{
+    height: 200px;
+}
+
+h1{
+    animation: text-animation 10s infinite;
+}
+
+#rollDice{
+    background: transparent;
+    animation: text-animation 10s infinite;
+    border: 1.5px solid black;
+    height: 55px;
+    width: 180px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+@-webkit-keyframes bg-animation {
+    0% {
+      background-color: rgb(198, 40, 40);
+    }
+    15% {
+      background-color: rgb(254, 227, 146);
+    }
+    30% {
+      background-color: rgb(117, 191, 117);
+    }
+    45% {
+      background-color: rgb(181, 181, 255);
+    }
+    60% {
+      background-color: rgb(205, 105, 205);
+    }
+    75% {
+      background-color: pink;
+    }
+    90% {
+      background-color: rgb(220, 115, 162);
+    }
+    100% {
+      background-color: rgb(223, 111, 111);
+    }
+  }
+@-webkit-keyframes button-animation {
+    0% {
+      background-color: rgb(223, 111, 111);
+    }
+    15% {
+      background-color: rgb(220, 115, 162);
+    }
+    30% {
+      background-color: pink;
+    }
+    45% {
+      background-color: rgb(205, 105, 205);
+    }
+    60% {
+      background-color: rgb(181, 181, 255);
+    }
+    75% {
+      background-color: rgb(117, 191, 117);
+    }
+    90% {
+      background-color: rgb(254, 227, 146);
+    }
+    100% {
+      background-color: rgb(198, 40, 40);
+    }
+  }
+  @-webkit-keyframes text-animation {
+    0% {
+     color: rgb(223, 111, 111);
+    }
+    15% {
+    color: rgb(220, 115, 162);
+    }
+    30% {
+    color: pink;
+    }
+    45% {
+    color: rgb(205, 105, 205);
+    }
+    60% {
+     color: rgb(181, 181, 255);
+    }
+    75% {
+    color: rgb(117, 191, 117);
+    }
+    90% {
+     color: rgb(254, 227, 146);
+    }
+    100% {
+    color: rgb(198, 40, 40);
+    }
+  }
