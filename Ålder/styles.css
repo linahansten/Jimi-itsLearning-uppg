@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    animation: bg-animation 10s infinite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input[type="date"]{
+    background-color: beige;
+    border: none;
+    font-size: 2rem;
+}
+
+div{
+    font-size: 1.5rem;
+}
+
+@-webkit-keyframes bg-animation {
+    0% {
+      background-color: rgb(198, 40, 40);
+    }
+    15% {
+      background-color: rgb(254, 227, 146);
+    }
+    30% {
+      background-color: rgb(117, 191, 117);
+    }
+    45% {
+      background-color: rgb(181, 181, 255);
+    }
+    60% {
+      background-color: rgb(205, 105, 205);
+    }
+    75% {
+      background-color: pink;
+    }
+    90% {
+      background-color: rgb(220, 115, 162);
+    }
+    100% {
+      background-color: rgb(223, 111, 111);
+    }
+  }
+ 

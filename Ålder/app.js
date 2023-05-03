@@ -5,7 +5,7 @@ inputElement.addEventListener('change', () => {
     const result = computeAge(inputElement.value);
     divElement.innerHTML = `
     Du är ${result.years} år och ${result.days} dagar gammal
-  `; floor
+  `
 
     /**
      * @param {string} dateOfBirth 
