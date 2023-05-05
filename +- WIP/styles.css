@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    animation: bg-animation 10s infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    font-size: 2rem;
+}
+.div{
+    flex-direction: column;
+}
+button{
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    font-size: 2rem;
+    background-color:#ef1133 ;
+    border-radius: 5px;
+    border-color: cyan;
+    color: orange;
+}
+
+@-webkit-keyframes bg-animation {
+    0% {
+      background-color: rgb(198, 40, 40);
+    }
+    15% {
+      background-color: rgb(254, 227, 146);
+    }
+    30% {
+      background-color: rgb(117, 191, 117);
+    }
+    45% {
+      background-color: rgb(181, 181, 255);
+    }
+    60% {
+      background-color: rgb(205, 105, 205);
+    }
+    75% {
+      background-color: pink;
+    }
+    90% {
+      background-color: rgb(220, 115, 162);
+    }
+    100% {
+      background-color: rgb(223, 111, 111);
+    }
+}
