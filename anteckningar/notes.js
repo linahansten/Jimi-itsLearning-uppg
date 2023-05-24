@@ -12,10 +12,11 @@ export async function addNote(note, notes) {
 }
 
 export async function editNote(editedNote) {
+  const notes = await getNotes()
   const index = notes.findIndex(note => note.id === editedNote.id)
   notes[index] = editedNote
   const msg = localStorage.setItem('notes', JSON.stringify(notes))
-  return !msg ? 'Note edited' : new Error('something went wrong')
+  window.location.reload()
 }
 
 export async function deleteNote(id, notes) {

@@ -60,12 +60,12 @@ function onclickDelete(id) {
 
 window.onclickDelete = onclickDelete
 
-function editNoteForm(id) {
+async function editNoteForm(id) {
   const editForm = document.querySelector(`#edit-form-${id}`)
   editForm.style.display = 'flex'
   editForm.style.flexDirection = 'column'
   editForm.style.gap = '1rem'
-  editNote(id, notes)
+
 }
 
 notes.forEach(note => {
@@ -79,7 +79,7 @@ notes.forEach(note => {
       date: new Date().toLocaleDateString(),
     }
     editNote(editedNote)
-    displayNotes(notes)
+    // displayNotes(notes)
   })
 })
 window.editNoteForm = editNoteForm
